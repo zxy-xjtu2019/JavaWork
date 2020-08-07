@@ -3,17 +3,14 @@ package Item;
 import java.util.ArrayList;
 
 import Item.Item;
-import Item.ItemOrder;
 
 public class Store {
     public ArrayList<Item> items = new ArrayList<Item>();
-    public ArrayList<ItemOrder> orders = new ArrayList<ItemOrder>();
     public ArrayList<DiscountItem> discountItems = new ArrayList<DiscountItem>();
     public Store(){
-
     }
     //
-    private int getItem(String name){
+    public int getItem(String name){
         for(int i = 0;i<items.size();i++){
             if(name == items.get(i).name)return i;
         }
@@ -31,7 +28,7 @@ public class Store {
         System.out.println("修改成功！");
     }
     //对商品进行操作
-    private int getDiscountItem(String name){
+    public int getDiscountItem(String name){
         for(int i=0;i<discountItems.size();i++){
             if(discountItems.get(i).name == name) return i;
         }
@@ -52,4 +49,6 @@ public class Store {
         discountItems.get(index).howToDiscount();
 
     }
+    //对打折商品操作
+
 }

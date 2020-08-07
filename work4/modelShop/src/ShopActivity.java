@@ -31,8 +31,8 @@ public class ShopActivity {
         }
         in.close();
     }
-    public static void addOrder(ItemOrder order,ArrayList<ItemOrder> orders){
-        orders.add(order);
+    public static void addOrder(Store store){
+        ItemOrder itemOrder = new ItemOrder(store);
         changeShoppingCar();
     }
     public static void changeShoppingCar(){
