@@ -1,6 +1,6 @@
 package Item;
 
-import showdetail.ShowDetail;
+import inter.ShowDetail;
 
 public class ItemOrder implements ShowDetail{
     int quantity;

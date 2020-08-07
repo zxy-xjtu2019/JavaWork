@@ -1,8 +1,8 @@
 package Item;
 
-public class Item {
-    String name;
-    double price;
+public class Item extends Store{
+    public String name;
+    public double price;
     boolean ifRight = false;
     //ifRight to show whether it can be bought
     public Item(){
@@ -19,5 +19,8 @@ public class Item {
         this.ifRight = true;
     }
     //create new Item
+    public void show(){
+        System.out.println(super.items);
+    }
     
 }

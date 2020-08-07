@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 import Item.ItemOrder;
-import showdetail.ShowDetail;
+import inter.ShowDetail;
 
 public class ShoppingCart implements ShowDetail{
     double count;
