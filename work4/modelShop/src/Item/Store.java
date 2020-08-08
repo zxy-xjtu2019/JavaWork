@@ -2,7 +2,6 @@ package Item;
 
 import java.util.ArrayList;
 
-import Item.Item;
 
 public class Store {
     public ArrayList<Item> items = new ArrayList<Item>();
@@ -12,7 +11,7 @@ public class Store {
     //
     public int getItem(String name){
         for(int i = 0;i<items.size();i++){
-            if(name == items.get(i).name)return i;
+            if(name.equals(items.get(i).name))return i;
         }
         return -1;
     }
