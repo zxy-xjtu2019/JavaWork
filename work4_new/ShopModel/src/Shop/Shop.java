@@ -6,11 +6,9 @@ import ShoppingCart.ItemOrder;
 
 public class Shop {
     ArrayList<Item> items = new ArrayList<Item>();
-    
     public Shop(){
 
     }
-
     private int searchItem(String name){
         for(int i=0;i<items.size();i++){
             if(items.get(i).name.equals(name))return i;
@@ -58,7 +56,7 @@ public class Shop {
         String name = ShopModel.in.next();
         if(searchItem(name)==-1){
             System.out.println("商城中没有该物品！");
-        }else if(ShopModel.shoppingCart.searchOrder(name)==-1){
+        }else if(ShopModel.shoppingCart.searchOrder(name)!=-1){
             System.out.println("该物品已经购买！详情请查看购物车！");
         }
         else{

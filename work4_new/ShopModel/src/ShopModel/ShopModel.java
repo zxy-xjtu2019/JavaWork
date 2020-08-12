@@ -59,7 +59,7 @@ public class ShopModel {
                 default:
                     System.out.println("不能做别的事情呢");
             }
-        }while(seletion.equals("E")==false);
+        }while(seletion.equals("F")==false);
     }
     public static void openCart(){
         String seletion;

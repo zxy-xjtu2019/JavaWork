@@ -1,9 +1,11 @@
 package ShoppingCart;
 
 import java.util.ArrayList;
+
+import Shop.Shop;
 import ShopModel.ShopModel;
 
-public class ShoppingCart {
+public class ShoppingCart extends Shop{
     ArrayList<ItemOrder> Orders = new ArrayList<ItemOrder>();
     double sumOfOrders;
     
@@ -27,8 +29,10 @@ public class ShoppingCart {
             return;
         }
         for(int i=0;i<Orders.size();i++){
-            System.out.printf("%s  %f\n",Orders.get(i).item,Orders.get(i).cost);
+            System.out.printf("%s  %f\n",Orders.get(i).item.getName(),Orders.get(i).cost);
         }
+        System.out.print("总计     ");
+        System.out.println(sumOfOrders);
     }
     public int searchOrder(String name){
         for(int i=0;i<Orders.size();i++){

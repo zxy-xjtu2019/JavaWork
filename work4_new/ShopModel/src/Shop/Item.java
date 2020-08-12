@@ -2,7 +2,7 @@ package Shop;
 
 import ShopModel.ShopModel;
 
-public class Item {
+public class Item extends Shop{
     String name;
     double price;
     Discount discount = new Discount();
@@ -12,7 +12,7 @@ public class Item {
         this.price = price;
     }
     public Item(){
-
+        
     }
     public double discountPrice(int number){
         return discount.discountPrice(number,price);
