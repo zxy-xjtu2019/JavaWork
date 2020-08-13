@@ -1,7 +1,7 @@
 package homework3;
 
 public class MyTime {
-    private int hour,minute,second;
+    int hour,minute,second;
     private String day = "AM";
     
     private void renewTime(){
@@ -104,4 +104,5 @@ public class MyTime {
         renewTime();
 
     }
+    
 }

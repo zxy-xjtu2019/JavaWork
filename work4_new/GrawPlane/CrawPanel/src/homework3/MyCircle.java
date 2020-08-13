@@ -4,12 +4,13 @@ package homework3;
 import java.awt.Color;
 import java.awt.Graphics;
 
-import Map.Map;
+import MAP.Map;
 
 
 public class MyCircle implements Map{
         private int x,y,d;
         private Color color;
+        private static final boolean IFAREA = true;
 
         public MyCircle(){
             this(30,30,30,Color.red);
@@ -39,5 +40,12 @@ public class MyCircle implements Map{
             g.setColor(color);
             g.drawOval(x, y, d, d);
         }
+        public String area(){
+            if(!MyCircle.IFAREA)
+                 return "该图形不可以求面积！";
+            else return String.valueOf(Math.PI*d*d/4);
+        }
+
+
 
 }

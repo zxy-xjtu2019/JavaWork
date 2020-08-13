@@ -2,11 +2,13 @@ package homework3;
 
 import java.awt.Color;
 import java.awt.Graphics;
-import Map.Map;
+
+import MAP.Map;
 
 public class MyRectangle implements Map{
         private int width,length,x,y;
         private Color color;
+        private static final boolean IFAREA = true;
         public MyRectangle(int x,int y,int width,int length,Color color){
             this.width = width;
             this.x = x;
@@ -29,6 +31,14 @@ public class MyRectangle implements Map{
         public void draw(Graphics g){
             g.setColor(color);
             g.drawRect(x, y, width, length);
+        }
+
+
+        @Override
+        public String area() {
+            if(!MyRectangle.IFAREA)
+                return "该图像不可以求面积！";
+            else return String.valueOf(width * length);
         }
 
 }
