@@ -4,7 +4,7 @@ package homework3;
 import java.awt.Color;
 import java.awt.Graphics;
 
-import MAP.Map;
+import Map.Map;
 
 
 public class MyCircle implements Map{

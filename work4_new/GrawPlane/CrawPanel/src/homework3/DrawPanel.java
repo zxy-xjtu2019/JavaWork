@@ -2,7 +2,7 @@ package homework3;
 
 import javax.swing.JPanel;
 
-import MAP.Map;
+import Map.Map;
 
 import java.awt.Color;
 import java.awt.Graphics;

@@ -1,4 +1,4 @@
-package MAP;
+package Map;
 
 import java.awt.Graphics;
 

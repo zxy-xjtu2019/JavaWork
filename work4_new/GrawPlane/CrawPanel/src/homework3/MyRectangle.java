@@ -3,7 +3,7 @@ package homework3;
 import java.awt.Color;
 import java.awt.Graphics;
 
-import MAP.Map;
+import Map.Map;
 
 public class MyRectangle implements Map{
         private int width,length,x,y;
